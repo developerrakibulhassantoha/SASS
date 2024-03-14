@@ -1,0 +1,22 @@
+/* Error: Missing argument $text-color.
+ *     ,
+ * 1   | @mixin button-default-style($back-color,$text-color){
+ *     |        ============================================= declaration
+ * ... |
+ * 11  |     @include button-default-style($primary-color);
+ *     |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation
+ *     '
+ *   _mixing.scss 11:5  button-default-style()
+ *   _mixing.scss 11:5  @import
+ *   style.scss 2:9     root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Missing argument $text-color.\a     \2577 \a 1   \2502  @mixin button-default-style($back-color,$text-color){\d\a     \2502         \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  declaration\a... \2502 \a 11  \2502      @include button-default-style($primary-color);\d\a     \2502      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ invocation\a     \2575 \a   _mixing.scss 11:5  button-default-style()\a   _mixing.scss 11:5  @import\a   style.scss 2:9     root stylesheet";
+}
